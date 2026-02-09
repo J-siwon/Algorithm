@@ -1,0 +1,70 @@
+import sys
+import math
+from collections import deque, Counter
+sys.setrecursionlimit(2*10**5)
+
+n,m = map(int, input().split())
+arr = [[]for i in range(m)]
+
+for i in range(m):
+    arr[i] = list(map(int, input().split()))
+
+tovisit = deque()
+count = 1
+for p in range(m):
+    for q in range(n):
+        if arr[p][q] == 1:
+            if p>0:
+                if arr[p - 1][q] == 0:
+                    arr[p-1][q] = 2
+                    tovisit.appendleft([p - 1, q, count])
+            if q > 0:
+                if arr[p][q - 1] == 0:
+                    arr[p][q-1] = 2
+                    tovisit.appendleft([p, q - 1, count])
+            if p < m - 1:
+                if arr[p + 1][q] == 0:
+                    arr[p+1][q] = 2
+                    tovisit.appendleft([p + 1, q, count])
+            if q < n - 1:
+                if arr[p][q + 1] == 0:
+                    arr[p][q+1] = 2
+                    tovisit.appendleft([p, q + 1, count])
+
+lastcount = 0
+isdone = False
+while(len(tovisit) > 0):
+    t = tovisit.pop()
+    p = t[0]
+    q = t[1]
+    count = t[2] +1
+
+    arr[p][q] = 1
+    if p > 0:
+        if arr[p-1][q] == 0:
+            arr[p-1][q] = 2
+            tovisit.appendleft([p - 1, q,count])
+    if q > 0:
+        if arr[p][q - 1] == 0:
+            arr[p][q-1] = 2
+            tovisit.appendleft([p, q - 1,count])
+    if p < m-1:
+        if arr[p + 1][q] == 0:
+            arr[p+1][q] = 2
+            tovisit.appendleft([p + 1, q,count])
+    if q < n-1:
+        if arr[p][q + 1] == 0:
+            arr[p][q+1] = 2
+            tovisit.appendleft([p, q + 1,count])
+
+
+
+isdone = False
+for i in range(m):
+    if 0 in arr[i]:
+        print(-1)
+        isdone = True
+        break
+
+if not isdone:
+    print(count-1)
