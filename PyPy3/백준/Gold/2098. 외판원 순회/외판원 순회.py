@@ -5,11 +5,11 @@ from collections import deque, Counter
 input = sys.stdin.readline
 
 
-def dfs(now, visited):
+def dfs(now, visited,startv):
     if visited == (1<<n)-1:
-        if arr[now][0] == 0:
+        if arr[now][startv] == 0:
             return 1e9
-        return arr[now][0]
+        return arr[now][startv]
 
     if dp[now][visited] != -1:
         return dp[now][visited]
@@ -22,7 +22,7 @@ def dfs(now, visited):
         if visited & t != 0:
             continue
 
-        cost = dfs(i,visited | t) + arr[now][i]
+        cost = dfs(i,visited | t, startv) + arr[now][i]
         tmcost = min(tmcost, cost)
     dp[now][visited] = tmcost
     return dp[now][visited]
@@ -35,7 +35,9 @@ arr = [[] for i in range(n)]
 for i in range(n):
     arr[i] = list(map(int, input().split()))
 
-
-mincost = dfs(0,1)
+for i in range(n):
+    dp = [[-1 for i in range(1 << n + 1 - 1)] for i in range(n)]
+    mincost = min(mincost, dfs(i,1<<i,i))
 
 print(mincost)
+
