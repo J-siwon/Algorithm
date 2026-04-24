@@ -1,0 +1,37 @@
+{
+  "platform": "Codeforces",
+  "submissionId": "1992",
+  "contestId": "1992",
+  "problemIndex": "D",
+  "problemTitle": "Test of Love",
+  "problemUrl": "https://codeforces.com/problemset/problem/1992/D",
+  "submissionUrl": "https://codeforces.com/problemset/submission/1992/371319233",
+  "verdict": "Accepted",
+  "verdictCode": "OK",
+  "language": "PyPy 3",
+  "timeConsumed": "218 ms",
+  "memoryConsumed": "9600 KB",
+  "submittedAt": "Apr/16/2026 10:56UTC+9",
+  "directory": "Codeforces/1992_D_Test_of_Love",
+  "solutionPath": "Codeforces/1992_D_Test_of_Love/solution.py",
+  "problem": {
+    "title": "Test of Love",
+    "timeLimit": "2 seconds",
+    "memoryLimit": "256 megabytes",
+    "inputFile": "standard input",
+    "outputFile": "standard output",
+    "tags": [
+      "dp",
+      "greedy",
+      "implementation",
+      "*1200"
+    ],
+    "samples": [
+      {
+        "input": "66 2 0LWLLLW6 1 1LWLLLL6 1 1LWLLWL6 2 15LWLLCC6 10 0CCCCCC6 6 1WCCCCW",
+        "output": "YES\nYES\nNO\nNO\nYES\nYES"
+      }
+    ]
+  },
+  "syncedAt": "2026-04-24T02:32:12.635Z"
+}
