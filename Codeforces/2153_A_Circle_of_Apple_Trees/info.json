@@ -1,0 +1,36 @@
+{
+  "platform": "Codeforces",
+  "submissionId": "2153",
+  "contestId": "2153",
+  "problemIndex": "A",
+  "problemTitle": "Circle of Apple Trees",
+  "problemUrl": "https://codeforces.com/problemset/problem/2153/A",
+  "submissionUrl": "https://codeforces.com/problemset/submission/2153/342964502",
+  "verdict": "Accepted",
+  "verdictCode": "OK",
+  "language": "PyPy 3",
+  "timeConsumed": "109 ms",
+  "memoryConsumed": "2400 KB",
+  "submittedAt": "Oct/11/2025 00:14UTC+9",
+  "directory": "Codeforces/2153_A_Circle_of_Apple_Trees",
+  "solutionPath": "Codeforces/2153_A_Circle_of_Apple_Trees/solution.py",
+  "problem": {
+    "title": "Circle of Apple Trees",
+    "timeLimit": "1 second",
+    "memoryLimit": "256 megabytes",
+    "inputFile": "standard input",
+    "outputFile": "standard output",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*800"
+    ],
+    "samples": [
+      {
+        "input": "342 2 2 251 4 5 1 265 4 2 1 2 3",
+        "output": "145"
+      }
+    ]
+  },
+  "syncedAt": "2026-04-24T02:33:26.152Z"
+}
