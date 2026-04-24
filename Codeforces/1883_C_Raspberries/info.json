@@ -1,0 +1,36 @@
+{
+  "platform": "Codeforces",
+  "submissionId": "1883",
+  "contestId": "1883",
+  "problemIndex": "C",
+  "problemTitle": "Raspberries",
+  "problemUrl": "https://codeforces.com/problemset/problem/1883/C",
+  "submissionUrl": "https://codeforces.com/problemset/submission/1883/371466706",
+  "verdict": "Accepted",
+  "verdictCode": "OK",
+  "language": "PyPy 3",
+  "timeConsumed": "265 ms",
+  "memoryConsumed": "12600 KB",
+  "submittedAt": "Apr/17/2026 16:38UTC+9",
+  "directory": "Codeforces/1883_C_Raspberries",
+  "solutionPath": "Codeforces/1883_C_Raspberries/solution.py",
+  "problem": {
+    "title": "Raspberries",
+    "timeLimit": "2 seconds",
+    "memoryLimit": "256 megabytes",
+    "inputFile": "standard input",
+    "outputFile": "standard output",
+    "tags": [
+      "dp",
+      "math",
+      "*1000"
+    ],
+    "samples": [
+      {
+        "input": "152 57 33 37 4 15 29 7 7 3 95 55 4 1 2 37 49 5 1 5 9 5 13 46 3 63 46 1 53 41 5 94 41 4 1 13 43 5 34 58 9 9 32 51 62 510 104 51 6 1 12 57 7",
+        "output": "2\n2\n1\n0\n2\n0\n1\n2\n0\n1\n1\n4\n0\n4\n3"
+      }
+    ]
+  },
+  "syncedAt": "2026-04-24T02:30:31.863Z"
+}
